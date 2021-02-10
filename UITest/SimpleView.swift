@@ -4,6 +4,7 @@ import SwiftUI
 struct SimpleView: View {
     
     init() {}
+    @State private var showingAlert = false
     
     var title: String {
         return NSLocalizedString("simple view title", comment: "Title of simple view")
@@ -20,6 +21,10 @@ struct SimpleView: View {
                 .navigationBarTitle(Text(self.title), displayMode: .inline)
             }
         }
+
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Alert"), message: Text("Alert message"), dismissButton: .default(Text("Dismiss")))
+        }
     }
     
     private var infoSection: some View {
@@ -35,7 +40,7 @@ struct SimpleView: View {
     private var infoButton: some View {
         Button(
             action: {
-                //Nothing to see here
+                self.showingAlert = true
             },
             label: {
                 Image(systemName: "info.circle")
