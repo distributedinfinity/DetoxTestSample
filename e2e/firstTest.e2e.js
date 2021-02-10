@@ -6,7 +6,7 @@ describe("Example of SwiftUI test failure", () => {
   
   it("should have info text", async () => {
     await expect(
-      element(by.label("info text").and(by.traits(["text"])))
+      element(by.label("info text").and(by.traits(["staticText"])))
     ).toBeVisible();
   });
 

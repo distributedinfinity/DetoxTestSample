@@ -7,7 +7,7 @@
     "detox:ios:test": "detox test --configuration ios.sim --loglevel trace --debug-synchronization 200 --detectOpenHandles"
   },
   "devDependencies": {
-    "detox": "16.9.2",
+    "detox": "17.14.9",
     "jest": "^26.6.3",
     "jest-circus": "^26.6.3"
   }
