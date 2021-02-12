@@ -30,4 +30,4 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-artifacts/
+.artifacts/

@@ -41,7 +41,7 @@ module.exports = {
             bitRate: 4000000
           },
           simulator: {
-            "codec": "hevc"
+            codec: "hevc"
           }
         }
       }
