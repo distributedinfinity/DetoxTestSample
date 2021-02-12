@@ -1,16 +1,6 @@
 module.exports = {
     testRunner: "jest",
     runnerConfig:'e2e/config.json',
-    behavior: {
-      init: {
-        reinstallApp: false,
-        exposeGlobals: true
-      },
-      launchApp: "auto",
-      cleanup: {
-        shutdownDevice: false
-      }
-    },
     configurations: {
         "ios.sim": {
           type: "ios.simulator",
