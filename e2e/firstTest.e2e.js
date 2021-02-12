@@ -1,7 +1,9 @@
 describe("Example of SwiftUI test failure", () => {
-
   beforeEach(async () => {
-    await device.relaunchApp();
+    await device.launchApp({
+      newInstance: true,
+      launchArgs: { 'DTXEnableVerboseSyncSystem': 'YES', 'DTXEnableVerboseSyncResources': 'YES' }
+    });
   });
   
   it("should have info text", async () => {

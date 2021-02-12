@@ -9,6 +9,7 @@
   "devDependencies": {
     "detox": "18.3.1",
     "jest": "^26.6.3",
-    "jest-circus": "^26.6.3"
+    "jest-circus": "^26.6.3",
+    "sanitize-filename": "^1.6.1"
   }
 }
